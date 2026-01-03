@@ -1,4 +1,5 @@
 import { useEffect } from 'react';
+import { getAssetPath } from '../utils/pathUtils';
 import './PreviewModal.css';
 
 interface PreviewModalProps {
@@ -33,13 +34,13 @@ export default function PreviewModal({ url, onClose }: PreviewModalProps) {
         </button>
         <div className="preview-modal-body">
           {isPdf ? (
-            <iframe src={url} className="preview-iframe" title="PDF 预览" />
+            <iframe src={getAssetPath(url)} className="preview-iframe" title="PDF 预览" />
           ) : isImage ? (
-            <img src={url} alt="预览" className="preview-image" />
+            <img src={getAssetPath(url)} alt="预览" className="preview-image" />
           ) : (
             <div className="preview-unsupported">
               <p>不支持预览此文件类型</p>
-              <a href={url} target="_blank" rel="noopener noreferrer" className="preview-download-link">
+              <a href={getAssetPath(url)} target="_blank" rel="noopener noreferrer" className="preview-download-link">
                 下载查看
               </a>
             </div>

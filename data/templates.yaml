@@ -48,7 +48,7 @@ templates:
     originalRepo: "https://github.com/anishathalye/gemini"
     originalLicense: "MIT"
     downloadUrl: "/templates/gemini/files.zip"
-    previewUrl: "/templates/gemini/main.pdf"
+    previewUrl: "/templates/gemini/poster.pdf"
     author: "Zhengxi Yu"
     addedDate: "2026-01-03"
   - id: stanford-poster
@@ -61,7 +61,7 @@ templates:
     originalRepo: "https://github.com/RylanSchaeffer/Stanford-LaTeX-Poster-Template"
     originalLicense: ""
     downloadUrl: "/templates/stanford-poster/files.zip"
-    previewUrl: "/templates/stanford-poster/main.pdf"
+    previewUrl: ""
     author: "Zhengxi Yu"
     addedDate: "2026-01-03"
 

@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { loadTemplates, getTemplateById } from '../utils/yamlLoader';
 import type { Template } from '../types/template';
+import { getAssetPath } from '../utils/pathUtils';
 import PreviewModal from '../components/PreviewModal';
 import './TemplateDetail.css';
 
@@ -62,10 +63,11 @@ export default function TemplateDetail() {
       <div className="template-detail-header">
         <div className="template-detail-thumbnail">
           <img
-            src={template.thumbnail}
+            src={getAssetPath(template.thumbnail)}
             alt={template.title}
             onError={(e) => {
-              (e.target as HTMLImageElement).src = '/vite.svg';
+              const baseUrl = import.meta.env.BASE_URL || '/';
+              (e.target as HTMLImageElement).src = `${baseUrl}vite.svg`;
             }}
           />
         </div>
@@ -87,7 +89,7 @@ export default function TemplateDetail() {
       <div className="template-detail-content">
         <div className="template-detail-actions">
           <a
-            href={template.downloadUrl}
+            href={getAssetPath(template.downloadUrl)}
             download
             className="action-button primary"
           >
@@ -151,7 +153,7 @@ export default function TemplateDetail() {
 
       {showPreview && template.previewUrl && (
         <PreviewModal
-          url={template.previewUrl}
+          url={getAssetPath(template.previewUrl)}
           onClose={() => setShowPreview(false)}
         />
       )}

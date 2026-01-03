@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "prebuild": "mkdir -p public/data && cp data/templates.yaml public/data/templates.yaml",
+    "prebuild": "bash scripts/copy-templates.sh",
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",

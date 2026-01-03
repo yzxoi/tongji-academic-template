@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import type { Template } from '../types/template';
+import { getAssetPath } from '../utils/pathUtils';
 import './TemplateCard.css';
 
 interface TemplateCardProps {
@@ -25,10 +26,11 @@ export default function TemplateCard({ template }: TemplateCardProps) {
       <Link to={`/template/${template.id}`} className="template-card-link">
         <div className="template-card-thumbnail">
           <img
-            src={template.thumbnail}
+            src={getAssetPath(template.thumbnail)}
             alt={template.title}
             onError={(e) => {
-              (e.target as HTMLImageElement).src = '/vite.svg';
+              const baseUrl = import.meta.env.BASE_URL || '/';
+              (e.target as HTMLImageElement).src = `${baseUrl}vite.svg`;
             }}
           />
         </div>
