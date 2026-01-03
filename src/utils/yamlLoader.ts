@@ -9,7 +9,15 @@ export async function loadTemplates(): Promise<TemplatesData> {
   }
 
   try {
-    const response = await fetch('/data/templates.yaml');
+    // 使用 import.meta.env.BASE_URL 来支持 GitHub Pages 的 base 路径
+    const baseUrl = import.meta.env.BASE_URL || '/';
+    const yamlPath = `${baseUrl}data/templates.yaml`;
+    const response = await fetch(yamlPath);
+    
+    if (!response.ok) {
+      throw new Error(`Failed to fetch templates: ${response.status} ${response.statusText}`);
+    }
+    
     const yamlText = await response.text();
     const data = yaml.load(yamlText) as TemplatesData;
     cachedData = data;

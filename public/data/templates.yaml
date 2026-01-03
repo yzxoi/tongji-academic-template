@@ -1,0 +1,67 @@
+templates:
+  - id: report-flow-ustc
+    title: "实验报告 Typst 模板"
+    description: "基于 report-flow-ustc 项目改编的 Typst 实验报告模板，已替换为同济大学标识和视觉元素。适用于各类实验报告撰写。"
+    format: "typst"
+    type: "lab-report"
+    tags: ["实验报告", "Typst", "本科"]
+    thumbnail: "/templates/report-flow-ustc/demo.png"
+    originalRepo: "https://github.com/Quaternijkon/report-flow-ustc"
+    originalLicense: ""
+    downloadUrl: "/templates/report-flow-ustc/files.zip"
+    previewUrl: "/templates/report-flow-ustc/main.pdf"
+    author: "Zhengxi Yu"
+    addedDate: "2026-01-03"
+  - id: peace-of-posters
+    title: "科学海报 Typst 模板"
+    description: "基于 peace-of-posters 项目改编的 Typst 科学海报模板，已替换为同济大学标识。适用于学术会议、展示等场景。"
+    format: "typst"
+    type: "experiment"
+    tags: ["海报", "Typst", "学术展示"]
+    thumbnail: "/templates/peace-of-posters/demo.png"
+    originalRepo: "https://github.com/jonaspleyer/peace-of-posters"
+    originalLicense: "MIT"
+    downloadUrl: "/templates/peace-of-posters/files.zip"
+    previewUrl: "/templates/peace-of-posters/main.pdf"
+    author: "Zhengxi Yu"
+    addedDate: "2026-01-03"
+  - id: zjureport
+    title: "实验报告 LaTeX 模板"
+    description: "基于 zjureport 项目改编的 LaTeX 实验报告模板，已替换为同济大学标识。适用于电子技术实验等课程报告。"
+    format: "latex"
+    type: "lab-report"
+    tags: ["实验报告", "LaTeX", "本科"]
+    thumbnail: "/templates/zjureport/demo.png"
+    originalRepo: "https://github.com/megrxu/zjureport"
+    originalLicense: "LPPL-1.3c"
+    downloadUrl: "/templates/zjureport/files.zip"
+    previewUrl: "/templates/zjureport/main.pdf"
+    author: "Zhengxi Yu"
+    addedDate: "2026-01-03"
+  - id: gemini
+    title: "学术海报 Beamer 模板"
+    description: "基于 Gemini 主题改编的 LaTeX Beamer 海报模板，已替换为同济大学标识和配色。适用于学术会议海报展示。"
+    format: "latex"
+    type: "experiment"
+    tags: ["海报", "LaTeX", "Beamer", "学术展示"]
+    thumbnail: "/templates/gemini/demo.png"
+    originalRepo: "https://github.com/anishathalye/gemini"
+    originalLicense: "MIT"
+    downloadUrl: "/templates/gemini/files.zip"
+    previewUrl: "/templates/gemini/main.pdf"
+    author: "Zhengxi Yu"
+    addedDate: "2026-01-03"
+  - id: stanford-poster
+    title: "学术海报 Beamer 模板（Stanford 风格）"
+    description: "基于 Stanford LaTeX Poster Template 改编的 Beamer 海报模板，已替换为同济大学标识和配色方案。适用于学术会议海报展示。"
+    format: "latex"
+    type: "experiment"
+    tags: ["海报", "LaTeX", "Beamer", "学术展示"]
+    thumbnail: "/templates/stanford-poster/demo.png"
+    originalRepo: "https://github.com/RylanSchaeffer/Stanford-LaTeX-Poster-Template"
+    originalLicense: ""
+    downloadUrl: "/templates/stanford-poster/files.zip"
+    previewUrl: "/templates/stanford-poster/main.pdf"
+    author: "Zhengxi Yu"
+    addedDate: "2026-01-03"
+
